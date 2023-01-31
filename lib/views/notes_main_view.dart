@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/custom_widgets/custom_bottom_sheet.dart';
 import 'package:notes_app/custom_widgets/custom_listview.dart';
 import 'package:notes_app/custom_widgets/custom_note_item.dart';
 
@@ -32,7 +33,17 @@ class NotesMainView extends StatelessWidget {
       ),
       body: const NotesListView(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+              isScrollControlled: false,
+              context: context,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.vertical(
+                  top: Radius.circular(25),
+                ),
+              ),
+              builder: (context) => CustomBottomSheet());
+        },
         child: const Icon(Icons.add),
       ),
     );
