@@ -35,12 +35,12 @@ class NoteEditView extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 30),
-            const CustomTextField(
+            const CustomTextFormField(
               hintText: "Title",
               maxLines: 1,
             ),
             const SizedBox(height: 30),
-            const CustomTextField(
+            const CustomTextFormField(
               hintText: "Content",
               maxLines: 10,
             ),

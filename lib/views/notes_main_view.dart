@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/custom_widgets/custom_bottom_sheet.dart';
+import 'package:notes_app/custom_widgets/custom_add_note_bottom_sheet.dart';
 import 'package:notes_app/custom_widgets/custom_listview.dart';
 import 'package:notes_app/custom_widgets/custom_note_item.dart';
 
