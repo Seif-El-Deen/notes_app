@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/custom_widgets/custom_add_note_bottom_sheet.dart';
 import 'package:notes_app/custom_widgets/custom_listview.dart';
-import 'package:notes_app/custom_widgets/custom_note_item.dart';
 
 class NotesMainView extends StatelessWidget {
   const NotesMainView({Key? key}) : super(key: key);
@@ -35,7 +34,7 @@ class NotesMainView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
-              isScrollControlled: false,
+              isScrollControlled: true,
               context: context,
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.vertical(
